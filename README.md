@@ -1,7 +1,7 @@
 # UnityLight3D
 ## Direct Light vs Indirect Light
 - Direct light changes the cool of the surface of an object.
-./MarkDownImage/DirectLight.png
+![Minion](./MarkDownImage/DirectLight.png)
 
 
 ## Baked Light/IndrectLight VS Realtime Light/IndrectLight

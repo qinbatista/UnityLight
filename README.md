@@ -32,6 +32,15 @@ The light set has mixed light mode, we can bake light for static objects, and re
 ![Minion](./MarkDownImage/MixedLight.gif)
 
 ## Light Prob VS Light Map
-Light prob receives lights from Light Probe Group, even though the object is static. Dynamic objects have better graphics quality with light prob. A light map is precomputed texture on objects. In general, light Map has better graphs.
+Light prob receives lights from Light Probe Group, even though the object is static. Dynamic objects have better graphics quality with light prob because they can't create light maps. A light map is precomputed texture on objects. In general, light Map has better graphs.
 - GameObject-> Mesh-> Receive Global Illumination
 ![Minion](./MarkDownImage/probvsmap.png)
+
+## Contribute Global illumination
+- The object will be set as static once it is selected. It will also generate a baked shadow for this object. Dynamic objects don't select this option. 
+- Unchecked it with Mixed Light, the objects can receive lights from the light prob group.
+
+## Probes
+- Objects can receive the environment light from the probes groups. The probes groups compute the light information and simulate the surrounding illumination. It is not global illumination but has relatively good light effects for dynamic objects compared with static global illumination objects.
+![Minion](./MarkDownImage/proon.gif)
+![Minion](./MarkDownImage/proff.gif)

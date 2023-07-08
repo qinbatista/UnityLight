@@ -46,3 +46,9 @@ Light prob receives lights from Light Probe Group, even though the object is sta
 ![Minion](./MarkDownImage/proon.gif)
 
 ![Minion](./MarkDownImage/proff.gif)
+
+## Static VS Dynamic Objects
+- Shadows, Light, and Indirect map are using the same UV
+- Light Probs work for Dynamic objects
+- Static objects can't use prob
+- Dynamic objects can't use the light map

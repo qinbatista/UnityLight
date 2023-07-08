@@ -42,13 +42,13 @@ Light prob receives lights from Light Probe Group, even though the object is sta
 
 ## Probes
 - Objects can receive the environment light from the probes groups. The probes groups compute the light information and simulate the surrounding illumination. It is not global illumination but has relatively good light effects for dynamic objects compared with static global illumination objects.
-
 ![Minion](./MarkDownImage/proon.gif)
 
-![Minion](./MarkDownImage/proff.gif)
+- Objects without probes groups
+![Minion](./MarkDownImage/prooff.gif)
 
 ## Static VS Dynamic Objects
-- Shadows, Light, and Indirect map are using the same UV
+- Shadows, Light, and Indirect maps are using the same UV
 - Light Probs work for Dynamic objects
 - Static objects can't use prob
 - Dynamic objects can't use the light map
